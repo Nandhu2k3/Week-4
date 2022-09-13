@@ -3,19 +3,22 @@ using namespace std;
 class Bin
 {
     public:
-        floyd(int n)
+        Bin(int decimal)
         {
-            int i,j;
-            while(i<=n)
+            cout<<"Decimal: "<<decimal;
+            int binary=0,i=1;
+            while(decimal>0)
             {
-                for(j=1;j<=i;j++)
-                    cout>>i++;
-                    
+                binary+=(decimal%2)*i;
+                i*=10;
+                decimal/=2;
+                cout<<"\n"<<binary<<" "<<decimal<<"\n";
             }
+            cout<<"\nBinary number: "<<binary;
         }
 };
 int main()
 {
-    floyd(34);
+    Bin(34);
     return 0;
 }
