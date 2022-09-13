@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+class Cube
+{
+    public:
+        Cube(int n)
+        {
+            int i;
+            for(i=1;i<=n;i++)
+                cout<<"Cube of "<<i<<" : "<<i*i*i<<"\n";
+        }
+    
+};
+int main()
+{
+    int n;
+    cout<<"enter number: ";
+    cin>>n;
+    Cube obj(n);
+
+    return 0;
+}
