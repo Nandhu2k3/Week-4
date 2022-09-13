@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+class floyd
+{
+    public:
+        floyd(int n1)
+        {
+            int n=n1,i=1,j,k=1;
+            while(i<=n)
+            {
+                for(j=0;j<i;j++)
+                    cout<<k++<<"\t";
+                cout<<"\n";
+                i++;
+            }
+        }
+};
+int main()
+{
+    floyd obj(6);
+    return 0;
+}
