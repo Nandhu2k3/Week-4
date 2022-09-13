@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+class Bin
+{
+    public:
+        floyd(int n)
+        {
+            int i,j;
+            while(i<=n)
+            {
+                for(j=1;j<=i;j++)
+                    cout>>i++;
+                    
+            }
+        }
+};
+int main()
+{
+    floyd(34);
+    return 0;
+}
